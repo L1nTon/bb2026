@@ -13,14 +13,63 @@
   --main-dark: RGB(17, 16, 15);
   --transition: 0.2s;
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.scroll-animate.animated {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.fade-animate {
+  opacity: 0;
+}
+
+.fade-animate.animated {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.page-load-fade {
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.page-load-fade.delayed {
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+/* Скрыть полосу прокрутки */
 html {
   scrollbar-width: none; /* Для Firefox */
   -ms-overflow-style: none; /* Для Internet Explorer и Edge */
 }
-
 html::-webkit-scrollbar {
   display: none; /* Для Chrome, Safari и Opera */
 }
+
 h1,
 h2 {
   color: rgba(15, 14, 14, 1);
@@ -93,6 +142,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  z-index: 999;
 }
 
 header nav .header__nav {
@@ -505,8 +555,7 @@ footer .footer__content .socials a {
   footer .footer__content .socials {
     gap: 40px;
   }
-  footer .copywrite p
-  {
+  footer .copywrite p {
     width: 100%;
     text-align: left;
   }
