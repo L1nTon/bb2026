@@ -1,0 +1,40 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 62px;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 999;
+}
+
+header nav .header__nav {
+  gap: 8px;
+}
+
+header nav a {
+  height: 52px;
+  padding: 12px;
+  font-size: var(--responsive-p-font-size);
+  background: #fff;
+}
+header nav a:hover {
+  background: var(--main-dark);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  header {
+    justify-content: center;
+  }
+  header nav a
+  {
+    padding: 8px 12px;
+  }
+  header .header__logo {
+    display: none;
+  }
+}
