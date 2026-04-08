@@ -1,27 +1,4 @@
-/* Указываем матрицы для каждой картинки через переменную */
-.carousel img:nth-child(1) {
-  --matrix: matrix(-0.982844, -0.184441, -0.184441, 0.982844, 0, 0);
-}
-.carousel img:nth-child(2) {
-  --matrix: matrix(0.989996, -0.141096, 0.141096, 0.989996, 0, 0);
-}
-.carousel img:nth-child(3) {
-  --matrix: matrix(0.993718, 0.111913, -0.111913, 0.993718, 0, 0);
-}
-.carousel img:nth-child(4) {
-  --matrix: matrix(0.996311, -0.0858135, 0.0858135, 0.996311, 0, 0);
-}
-.carousel img:nth-child(5) {
-  --matrix: matrix(0.99578, 0.0917758, -0.0917758, 0.99578, 0, 0);
-}
-.carousel img:nth-child(6) {
-  --matrix: matrix(0.979327, -0.202284, 0.202284, 0.979327, 0, 0);
-}
-:root
-{
-    --carousel-gap: calc(37.412px + 75px);
-    --title-padding: 180px 0px 80px 0px;
-}
+
 .desktop{display: block;}
 .tablet{display: none;}
 .mobile{display: none;}
@@ -40,72 +17,7 @@ h1 {
   padding-left: 10px;
 }
 
-.art__carousel {
-  overflow: hidden;
-  height: 524.9px;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 20.78px 0 83.14px 0px;
-}
 
-.art__carousel.word
-{
-    height: max-content;
-    padding: 120px 0;
-}
-.art__carousel.word pre
-{
-    font-size: var(--responsive-font-size);
-    font-family: "Instrument Serif";
-    font-style: Italic;
-    font-weight: 400;
-    line-height: 90%;
-    letter-spacing: -2%;
-}
-
-.carousel-wrapper {
-  display: flex;
-  width: max-content;
-  animation: scroll 46.1359375s linear infinite;
-}
-
-.carousel {
-  display: flex;
-  gap: var(--carousel-gap);
-  padding-right: var(--carousel-gap);
-}
-.word .carousel {
-  gap: 0;
-  padding-right: 0;
-}
-
-.carousel img {
-  flex-shrink: 0;
-  height: 330px;
-  object-fit: cover;
-  transform: var(--matrix) scale(1);
-  transition: transform 0.4s ease;
-  cursor: pointer;
-}
-
-.art__carousel:hover .carousel-wrapper {
-  animation-play-state: paused;
-}
-
-.carousel img:hover {
-  transform: var(--matrix) scale(1.05);
-  z-index: 10;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
 
 
 main
@@ -275,9 +187,6 @@ main
         --carousel-gap: 37.412px;
         --title-padding: 140px 0px 64px 0px;
     }
-    .desktop{display: none;}
-    .tablet{display: none;}
-    .mobile{display: block;}
     .art__carousel
     {
         height: 273px;

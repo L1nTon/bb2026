@@ -9,6 +9,7 @@
     <!-- <link rel="stylesheet" href="./assets/css/styles.css" /> -->
 
     <link rel="stylesheet" href="./assets/css/bb2026.css" />
+    <link rel="stylesheet" href="./assets/css/carousel.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
     <title>BB2026</title>
@@ -40,7 +41,7 @@
 
     <h1>Bukhara Biennial 2025</h1>
 
-    <section class="art__carousel">
+    <section class="art__carousel scroll-animate">
       <div class="carousel-wrapper">
         <div class="carousel">
           <img
@@ -120,7 +121,7 @@
       </section>
 
       <section class="article__list" id="article__list">
-
+        <!-- JS RENDER -->
       </section>
 
         <section class="art__carousel word">
@@ -240,7 +241,7 @@
         const res = [];
       articles.forEach((article, index) => {
         res.push(`
-          <article onclick="goTo('/article.html', '_self')">
+          <article onclick="goTo('/article.html', '_self')" class="scroll-animate">
             <div class="article__img">
               <img src="./assets/images/${article.img}" alt="${article.title}">
             </div>

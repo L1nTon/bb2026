@@ -1,0 +1,114 @@
+/* Указываем матрицы для каждой картинки через переменную */
+.carousel img:nth-child(1) {
+  --matrix: matrix(-0.982844, -0.184441, -0.184441, 0.982844, 0, 0);
+}
+.carousel img:nth-child(2) {
+  --matrix: matrix(0.989996, -0.141096, 0.141096, 0.989996, 0, 0);
+}
+.carousel img:nth-child(3) {
+  --matrix: matrix(0.993718, 0.111913, -0.111913, 0.993718, 0, 0);
+}
+.carousel img:nth-child(4) {
+  --matrix: matrix(0.996311, -0.0858135, 0.0858135, 0.996311, 0, 0);
+}
+.carousel img:nth-child(5) {
+  --matrix: matrix(0.99578, 0.0917758, -0.0917758, 0.99578, 0, 0);
+}
+.carousel img:nth-child(6) {
+  --matrix: matrix(0.979327, -0.202284, 0.202284, 0.979327, 0, 0);
+}
+
+.art__carousel {
+  overflow: hidden;
+  height: 524.9px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20.78px 0 83.14px 0px;
+}
+
+.art__carousel.word {
+  height: max-content;
+  padding: 120px 0;
+}
+.art__carousel.word pre {
+  font-size: var(--responsive-font-size);
+  font-family: "Instrument Serif";
+  font-style: Italic;
+  font-weight: 400;
+  line-height: 90%;
+  letter-spacing: -2%;
+}
+
+.carousel-wrapper {
+  display: flex;
+  width: max-content;
+  animation: scroll 46.1359375s linear infinite;
+}
+
+.carousel {
+  display: flex;
+  gap: var(--carousel-gap);
+  padding-right: var(--carousel-gap);
+}
+.word .carousel {
+  gap: 0;
+  padding-right: 0;
+}
+
+.carousel img {
+  flex-shrink: 0;
+  height: 330px;
+  object-fit: cover;
+  transform: var(--matrix) scale(1);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.art__carousel:hover .carousel-wrapper {
+  animation-play-state: paused;
+}
+
+.carousel img:hover {
+  transform: var(--matrix) scale(1.05);
+  z-index: 10;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --carousel-gap: 37.412px;
+  }
+  .art__carousel {
+    height: 273px;
+  }
+  .carousel img {
+    flex-shrink: 0;
+    height: 175px;
+  }
+
+  .art__carousel.word {
+    padding: 64px 0;
+  }
+  .subscribe .content {
+    height: 277px;
+    min-height: 0;
+  }
+  .subscribe .bg__img {
+    align-items: flex-end;
+  }
+  .subscribe .bg__letter {
+    max-width: none;
+    min-width: 0;
+    height: 277px;
+    width: auto;
+  }
+}

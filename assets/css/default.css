@@ -11,12 +11,15 @@
 }
 
 :root {
+  --carousel-gap: calc(37.412px + 75px);
   --main-dark: RGB(17, 16, 15);
+  --secondary-text: rgb(246, 248, 251);
   --transition: 0.2s;
   --responsive-h1-font-size: 80px;
   --responsive-font-size: 80px;
   --responsive-p-font-size: 20px;
   --border-radius: 8px;
+  --title-padding: 180px 0px 80px 0px;
 }
 
 @keyframes fadeInUp {
@@ -78,6 +81,23 @@ html {
 }
 html::-webkit-scrollbar {
   display: none; /* Для Chrome, Safari и Opera */
+}
+
+.bg-card {
+  border-radius: 8px;
+  background-size:
+    1280px 600px,
+    auto;
+  background-position: left top;
+  background-image:
+    image-set(
+      url(../images/card_bg_small.png) 1x,
+      url(../images/card_bg_large.png) 2x
+    ),
+    none;
+  background-color: rgb(245, 245, 245);
+
+  color: var(--main-dark);
 }
 
 h1,
@@ -225,6 +245,16 @@ main {
     --responsive-font-size: 64px;
     --responsive-h1-font-size: 60px;
   }
+
+  .desktop {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
   .subscribe h2 {
     font-size: 64px;
   }
@@ -234,6 +264,16 @@ main {
     --responsive-font-size: 40px;
     --responsive-h1-font-size: 34px;
     --responsive-p-font-size: 18px;
+  }
+
+  .desktop {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
+  .mobile {
+    display: block;
   }
 
   .desktop-only {
