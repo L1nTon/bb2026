@@ -7,6 +7,7 @@
   font-size: 20px;
   font-weight: 300;
   line-height: 140%;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -278,20 +279,53 @@ main {
   height: 125px;
 }
 .advisory-view-all {
+  position: relative;
   max-width: 1260px;
   width: 100%;
   margin: 10px auto 0;
   padding: 16px 24px 16px 24px;
   cursor: pointer;
-  transition: var(--transition);
-}
-.advisory-view-all:hover {
   background-color: rgb(245, 245, 245);
   background-image: url(../images/card_bg_hover.png);
-  color: #fff;
 }
-.advisory-view-all p {
+.advisory-view-all::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-size:
+    1280px 600px,
+    auto;
+  background-position: left top;
+  background-image:
+    image-set(
+      url(../images/card_bg_small.png) 1x,
+      url(../images/card_bg_large.png) 2x
+    ),
+    none;
+  background-color: rgb(245, 245, 245);
+  opacity: 1;
+  z-index: 1;
+  transition: var(--transition);
+}
+.advisory-view-all:hover::before
+{
+  opacity: 0;
+}
+.advisory-view-all a {
+  position: relative;
+  display: block;
+  color: var(--main-dark);
   text-align: center;
+  transition: var(--transition);
+  z-index: 2;
+}
+.advisory-view-all:hover a {
+  color: #fff;
 }
 
 .subscribe {
