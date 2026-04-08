@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Geist";
+  font-style: Light;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 140%;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-dark: RGB(17, 16, 15);
+  --transition: 0.2s;
+  --responsive-font-size: 80px;
+  --responsive-p-font-size: 20px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.scroll-animate.animated {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.fade-animate {
+  opacity: 0;
+}
+
+.fade-animate.animated {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.page-load-fade {
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.delayed {
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+.album__img__delayed {
+  animation: fadeInUp 1s ease-in-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+/* Скрыть полосу прокрутки */
+html {
+  scrollbar-width: none; /* Для Firefox */
+  -ms-overflow-style: none; /* Для Internet Explorer и Edge */
+}
+html::-webkit-scrollbar {
+  display: none; /* Для Chrome, Safari и Opera */
+}
+
+h1,
+h2 {
+  color: rgba(15, 14, 14, 1);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 95%;
+  letter-spacing: -4%;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.d-flex {
+  display: flex;
+}
+.mobile-only {
+  display: none;
+}
+.italic {
+  font-family: "Instrument Serif";
+  font-style: Italic;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 90%;
+  letter-spacing: -2%;
+}
+.p-120-64 {
+  padding: 120px 0;
+}
+p
+{
+  font-size: var(--responsive-p-font-size);
+}
+.btn {
+  letter-spacing: -2%;
+  border-radius: 999px;
+  color: var(--main-dark);
+  transition: var(--transition);
+  cursor: pointer;
+}
+/* p
+{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 140%;
+} */
+section {
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  color: white;
+  font-family: "Geist", sans-serif;
+  background-size:
+    1280px 600px,
+    auto;
+  background-position: left top;
+  background-image:
+    image-set(url(../images/bg_small.png) 1x, url(../images/bg_large.png) 2x),
+    none;
+  background-color: rgb(15, 14, 14);
+}
+
+main {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  width: 100%;
+}
+
+.subscribe {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 80px 40px 80px 40px;
+  overflow: hidden;
+}
+.subscribe img {
+  max-width: 1024px;
+  min-width: 800px;
+  width: 100%;
+  margin: auto;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.subscribe .content {
+  width: 100%;
+  min-height: 520.45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform-origin: center;
+  transform: rotate(-6deg);
+  gap: 32px;
+}
+.subscribe .content p {
+  margin-top: 15px;
+  color: var(--main-dark);
+}
+.subscribe .content button.btn {
+  height: 68px;
+  padding: 0px 24px 0px 24px;
+  border: none;
+  outline: none;
+  color: rgba(246, 248, 251, 1);
+  background-color: var(--main-dark);
+}
+
+@media (max-width: 1280px) {
+  :root {
+    --responsive-font-size: 64px;
+  }
+  .subscribe h2 {
+    font-size: 64px;
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    --responsive-font-size: 40px;
+    --responsive-p-font-size: 18px;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+
+  .subscribe h2 {
+    font-size: 40px;
+  }
+
+  .subscribe .content {
+    transform: rotate(0deg);
+    gap: 0;
+  }
+  .subscribe .content button.btn {
+    /* Button - small */
+    height: 56px;
+    padding: 0px 16px 0px 16px;
+  }
+}

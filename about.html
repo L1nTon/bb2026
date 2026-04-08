@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/default.css" />
+
+    <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <title>BB2026</title>
+  </head>
+  <body>
+    <header class="d-flex page-load-fade delayed">
+      <div class="header__logo">
+        <a href="/">
+          <img src="./assets/images/logo.png" alt="" />
+        </a>
+      </div>
+      <nav>
+        <ul class="header__nav d-flex">
+          <li>
+            <a href="/" class="btn">Home</a>
+          </li>
+          <li class="desktop-only">
+            <a href="#" class="btn">Bukhara Biennial 2025</a>
+          </li>
+          <li class="mobile-only">
+            <a href="#" class="btn">BB 2025</a>
+          </li>
+          <li>
+            <a href="/about.html" class="btn">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>About</h1>
+        <section class="about delayed">
+          <div class="about__section">
+            <h2>ACDF</h2>
+            <p>
+              The Uzbekistan Art and Culture Development Foundation (ACDF)
+              preserves, promotes and supports the country’s cultural heritage,
+              arts and contemporary culture. The Foundation works to strengthen
+              the cultural ecosystem, foster the creative economy and create
+              opportunities for professionals at local and international levels.
+              <br />
+              ACDF believes that culture plays a vital role in shaping society,
+              connecting communities and advancing intercultural dialogue.
+              <br />
+              Among its key initiatives are the Centre for Contemporary Art in
+              Tashkent (opening in 2026), the development of the new State
+              Museum of Uzbekistan designed by Tadao Ando, and major
+              international projects such as the Bukhara Biennial and the Aral
+              Culture Summit.
+              <br />
+              Through exhibitions and collaborations with leading institutions
+              worldwide — including the Louvre, the British Museum and the
+              Uffizi Galleries — ACDF continues to amplify Uzbek culture on the
+              global stage.
+            </p>
+          </div>
+          <div class="about__section">
+            <h2>Why this exists</h2>
+            <p>
+              The Bukhara Biennial connects contemporary art with the living
+              heritage of Bukhara. Across historic mosques, madrasas, and public
+              spaces, artists and artisans from Uzbekistan and around the world
+              create new dialogues between tradition and contemporary practice.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <section class="album scroll-animate">
+        <div class="album__bg">
+          <img
+            src="./assets/images/about/album_bg.jpg"
+            alt="Album Background"
+          />
+        </div>
+        <div class="album__hero">
+          <h2>Gayane Umerova</h2>
+          <div class="album__content">
+            <div class="hero__img album__img__delayed">
+              <img src="./assets/images/about/hero.png" alt="Gayane Umerova" />
+            </div>
+            <p>
+              Gayane Umerova is dedicated to advancing Uzbekistan’s cultural
+              sector and strengthening the role of arts and heritage in society.
+              She serves as Head of the Department of Creative Economy and
+              Tourism of the Administration of the President of Uzbekistan,
+              Chairperson of the Uzbekistan Art and Culture Development
+              Foundation, and Chairperson of the 25th session of the UNESCO
+              General Assembly.
+              <br />
+              Gayane Umerova leads key cultural initiatives, including the
+              restoration of the Centre for Contemporary Arts in Tashkent,
+              opening in March 2026, and the construction of the new National
+              Museum of Uzbekistan, designed by Tadao Ando. She also
+              commissioned the inaugural Bukhara Biennial in Bukhara, which
+              welcomed over one and a half million visitors.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee scroll-animate" id="members">
+        <h2>Advisory Board</h2>
+        <p>
+          The Bukhara Biennial has launched an Advisory Board to guide the
+          development of the next edition. Made up of leading international
+          figures from the fields of contemporary art, culture, and academia,
+          the Board provides strategic guidance on the biennial’s artistic
+          vision, programme, and global engagement. By creating a platform for
+          the exchange of knowledge and ideas and fostering meaningful
+          institutional collaborations, the Advisory Board will help extend the
+          scope and impact of the biennial, supporting its long-term development
+          and international resonance. Drawing on expertise and multiple
+          perspectives, the Advisory Board supports the biennial’s mission to
+          foster meaningful dialogue between contemporary artistic practice
+        </p>
+      </section>
+
+      <section class="advisory__board"></section>
+
+      <section class="subscribe scroll-animate">
+        <img alt="" src="./assets/images/subscribe.png" />
+
+        <div class="content">
+          <div>
+            <h2 class="italic">Get in touch</h2>
+            <p>Questions about the Bukhara Biennial?</p>
+          </div>
+          <button onclick="goTo('#')" class="btn">Contact us</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__logo">
+        <h2>Bukhara Biennial</h2>
+      </div>
+      <div class="footer__content">
+        <div class="socials d-flex">
+          <div class="links">
+            <span class="tag"> Links </span>
+            <a href="#">Home</a>
+            <a href="#">Bukhara Biennial 2025</a>
+            <a href="/about.html">About</a>
+          </div>
+          <div class="connect">
+            <span class="tag"> Connect </span>
+            <a
+              href="https://www.instagram.com/bukhara.biennial/"
+              target="_blank"
+              >Instagram</a
+            >
+            <a href="#">Email</a>
+          </div>
+        </div>
+        <div class="copywrite">
+          <p>©2025 Bukhara Biennial. All rights reserved.</p>
+          <p>Contemporary art in dialogue with living heritage</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/scripts.js"></script>
+
+    <script>
+      const advisoryBoardList = [
+        {
+          name: "Aya Al-Bakree",
+          description:
+            "Aya Al-Bakree is the CEO of the Diriyah Biennale Foundation (DBF), a Saudi Arabian non-profit culturalorganisation chaired by Prince Badr bin Abdullah bin Farhan. Under her leadership, the foundation organizes two alternating biennales focused on contemporary and Islamic arts, with the goal of fostering global cultural dialogue and supporting artistic excellence. Aya’s vision centres on connecting Saudi Arabia to the international art world, enriching public engagement through extensive educational programs, and elevating curatorial standards.",
+          hiden: [
+            "A strong advocate for the arts and for transforming public spaces into cultural venues, Aya has led the launch of the foundation’s landmark biennale editions at the JAX District in Diriyah and the historic Hajj Terminal in Jeddah. These events featured a diverse range of local and international artists and attracted hundreds of thousands of visitors. The 2021 contemporary art biennale marked the first of its kind in Saudi Arabia, while the Islamic Arts Biennale in Jeddah was a historic global first, presenting a vast array of both contemporary and ancient works.",
+            "Aya holds a degree in Global Communications from the American University of Paris and studied at Parsons. Before joining DBF, she played key roles in promoting artistic exchange at major galleries in France and Saudi Arabia.",
+          ],
+        },
+        {
+          name: "Dilyara Allakhverdova",
+          description:
+            "Dilyara Allakhverdova has a law degree from the Moscow Institute of Foreign Affairs. She is an art collector and patron of the arts. Dilyara co-founded the Contemporary City Foundation, a platform for young artists and curators, in Moscow in 2005.",
+          hiden: [
+            "Since then, she has served as Board member of the Institute of Contemporary Art (ICA) and co-Chairman of Tate’s Russian and Eastern European Acquisitions Committee in London.",
+            "Dilyara was also Chairwoman of Art Night London in 2018. Currently, she is a Board Member of the Institute for Human Activities, a research project led by Dutch artist Renzo Martens. She is also a Council Member of the Georgetown University Art Galleries.",
+          ],
+        },
+        {
+          name: "Alia Al-Senussi",
+          description:
+            "Alia Al-Senussi is a cultural strategist and art world advisor with nearly two decades of international experience.",
+          hiden: [
+            "An academic and lecturer specialising in the intersection of politics and culture, Alias work focuses on cultural diplomacy and the role of the arts in driving social change. With a background spanning art advisory, patronage, and cultural programming, Alia fosters connections between creative communities through events, collaborations, partnerships, philanthropy, and education.",
+            "Drawing on Libyan heritage and longstanding engagement with the Middle East, Alia is committed to amplifying the voices and visibility of Arab artists within the global art ecosystem. Their work bridges networks across the Middle East, the UK, the USA, Europe, and Asia.",
+          ],
+        },
+        {
+          name: "Alberto Cavalli",
+          description:
+            "Alberto Cavalli is the Executive Director of the Michelangelo Foundation for Creativity and Craftsmanship (Geneva) and the General Director of the Fondazione Cologni dei Mestieri d’Arte (Milan).",
+          hiden: [
+            "He is also a professor at the Milan Politecnico University and at the Creative Academy, where, in addition to teaching, he runs seminars on the artistic crafts.",
+            'He is the curator of the event "Homo Faber: Crafting a more human future", organised by the Michelangelo Foundation. Cavalli has been a member of the jury of the Prix Liliane Bettencourt pour l’Intelligence de la main by the Fondation Bettencourt Schueller in France.',
+          ],
+        },
+        {
+          name: "Aaron Cezar",
+          description:
+            "Aaron is the founding Director of Delfina Foundation, where he leads its renowned residency, exhibition, and public programmes. Over the past 15 years, he has transformed Delfina into a global hub for artistic exchange, building partnerships with major international institutions. He initiated innovative thematic programmes like Collecting as Practice, the first residency integrating artists and collectors.",
+          hiden: [
+            "In addition to his work at Delfina, Aaron has curated exhibitions and performances at institutions including Hayward Gallery Project Space, SongEun Artspace, ArtBo, and Art Dubai. He co-curated performances at the 58th Venice Biennale and frequently moderates panels at major art fairs like Art Basel, Frieze, and Art Brussels. His writing has appeared in The Art Newspaper, Harper’s Bazaar, and ArtAsiaPacific. He also co-edited Politics of Food, a book inspired by a Delfina programme.",
+            "Aaron advises institutions such as Asymmetry Art Foundation and Kunsthalle Praha and sits on boards and committees for initiatives like Dhaka Art Summit and Alserkal Avenue. He has served on numerous award juries, including the Turner Prize (2021) and Korea Art Prize (2023). Before Delfina, he held leadership roles at Metal and contributed to cultural initiatives for London 2012, among others.",
+          ],
+        },
+        {
+          name: "Chris Dercon",
+          description:
+            "Chris Dercon is a renowned art historian, curator, and museum director, currently serving as Director of the Fondation Cartier pour l’Art Contemporain since June 2023. Born in Lier, Belgium, in 1958, he studied Art History and Theatre Studies at the Rijksuniversiteit Leiden, and Film Studies at the Vrije Universiteit in Amsterdam. Throughout his career, Chris has combined academic insight with dynamic leadership in the international art world.",
+          hiden: [
+            "He began his professional journey in 1988 as program director at PS1 in New York. He later directed several major institutions: Witte de With in Rotterdam (1990–1995), Boijmans Van Beuningen Museum (1996–2002), Haus der Kunst in Munich (2003–2011), Tate Modern in London (2011–2016), and the Volksbühne Theater in Berlin (2017–2018). From 2019 to 2023, he chaired the Réunion des Musées Nationaux – Grand Palais in Paris.",
+            "Beyond leadership, Chris frequently participates in international art juries and advisory panels. He has served on juries for the Venice Biennale, Documenta, Prix de Rome, Marcel Duchamp Prize, and many others. His deep engagement across museums, performing arts, and contemporary practices has made him a key figure in shaping cultural institutions across Europe, Asia, and beyond.",
+          ],
+        },
+        {
+          name: "Michael Govan",
+          description:
+            "Michael Govan is a distinguished American museum director and cultural leader, best known as the CEO and Wallis Annenberg Director of the Los Angeles County Museum of Art (LACMA), a position he has held since 2006. Born in 1963 in North Adams, Massachusetts, he studied Art History and Fine Arts at Williams College, where he was actively involved with the Williams College Museum of Art.",
+          hiden: [
+            "Before joining LACMA, Govan served as president and director of the Dia Art Foundation (1994–2006) in New York, where he led the transformation of a Nabisco box factory into the acclaimed Dia:Beacon museum. Earlier in his career, he was deputy director of the Solomon R. Guggenheim Museum in New York, contributing to exhibitions and the Guggenheim’s international programming.",
+            "At LACMA, Govan has overseen major acquisitions, expanded the museum’s global profile, and spearheaded an ambitious transformation of the museum’s campus, including commissioning new architectural and public art projects designed to rethink how museums engage with contemporary audiences. <br/> His leadership combines curatorial vision with institutional strategy, making him one of the most influential figures in the international museum world",
+          ],
+        },
+      ];
+      const result = [];
+      advisoryBoardList.forEach((member, index) => {
+        result.push(`
+        <article class="${index % 2 === 0 ? "" : "reverse"} scroll-animate" id="${member.name.split(" ").join("-")}">
+          <div class="article__img">
+            <img
+              src="./assets/images/about/team/${member.name.split(" ").join("-")}.png"
+              alt="${member.name}"
+            />
+          </div>
+          <div class="article__content">
+            <h3>${member.name}</h3>
+            <p>
+              ${member.description}
+            </p>
+            <p class="hiden">
+                ${member.hiden.join("</p><p class='hiden'>")}
+            </p>
+            <button class="read__more">Read More</button>
+          </div>
+        </article>
+        `);
+      });
+      document.querySelector(".advisory__board").innerHTML = result.join("");
+
+      const readMoreButtons = document.querySelectorAll(".read__more");
+
+      readMoreButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const articleContent = button.closest(".article__content");
+          const hiddenParagraphs = articleContent.querySelectorAll(".hiden");
+
+          hiddenParagraphs.forEach((paragraph) => {
+            paragraph.style.display =
+              paragraph.style.display === "block" ? "none" : "block";
+            paragraph.style.animation = "fadeIn 0.5s ease-in-out";
+          });
+
+          button.textContent =
+            button.textContent === "Read More" ? "Hide" : "Read More";
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -4,20 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/default.css" />
+
     <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
     <title>BB2026</title>
   </head>
   <body>
     <header class="d-flex page-load-fade delayed">
       <div class="header__logo">
-        <a href="#">
+        <a href="/">
           <img src="./assets/images/logo.png" alt="" />
         </a>
       </div>
       <nav>
         <ul class="header__nav d-flex">
           <li>
-            <a href="#" class="btn">Home</a>
+            <a href="/" class="btn">Home</a>
           </li>
           <li class="desktop-only">
             <a href="#" class="btn">Bukhara Biennial 2025</a>
@@ -26,7 +31,7 @@
             <a href="#" class="btn">BB 2025</a>
           </li>
           <li>
-            <a href="#" class="btn">About</a>
+            <a href="/about.html" class="btn">About</a>
           </li>
         </ul>
       </nav>
@@ -100,7 +105,7 @@
             <p>Name</p>
             <p>About</p>
           </div>
-          <article data-url="#">
+          <article data-url="about.html">
             <p class="name">Aya Al-Bakree</p>
             <p class="about">
               Aya Al-Bakree is the CEO of the Diriyah Biennale Foundation (DBF),
@@ -114,7 +119,7 @@
               />
             </div>
           </article>
-          <article data-url="#">
+          <article data-url="about.html">
             <p class="name">Dilyara Allakhverdova</p>
             <p class="about">
               Dilyara Allakhverdova is an art collector and patron of the arts.
@@ -128,7 +133,7 @@
               />
             </div>
           </article>
-          <article data-url="#">
+          <article data-url="about.html">
             <p class="name">Alia Al-Senussi</p>
             <p class="about">
               Alia Al-Senussi is a cultural strategist and art world advisor
@@ -144,8 +149,8 @@
         </div>
       </section>
 
-      <section class="bg-card advisory-view-all scroll-animate">
-        <p class="italic">View all</p>
+      <section class="advisory-view-all scroll-animate">
+        <a class="italic" href="/about.html">View all</a>
       </section>
 
       <section class="subscribe scroll-animate">
@@ -156,7 +161,7 @@
             <h2 class="italic">Get in touch</h2>
             <p>Questions about the Bukhara Biennial?</p>
           </div>
-          <button class="btn">Contact us</button>
+          <button onclick="goTo('#')" class="btn">Contact us</button>
         </div>
       </section>
     </main>
@@ -171,11 +176,11 @@
             <span class="tag"> Links </span>
             <a href="#">Home</a>
             <a href="#">Bukhara Biennial 2025</a>
-            <a href="#">About</a>
+            <a href="/about.html">About</a>
           </div>
           <div class="connect">
             <span class="tag"> Connect </span>
-            <a href="#">Instagram</a>
+            <a href="https://www.instagram.com/bukhara.biennial/" target="_blank">Instagram</a>
             <a href="#">Email</a>
           </div>
         </div>

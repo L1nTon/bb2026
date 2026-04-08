@@ -33,6 +33,10 @@ const advisoryArticles = document.querySelectorAll(
 advisoryArticles.forEach((article) => {
   article.addEventListener("click", () => {
     const url = article.getAttribute("data-url");
-    window.open(url, "_blank");
+    window.open(url, "_self");
   });
 });
+
+const goTo = (url) => {
+  window.open(url, "_blank");
+};
