@@ -1,0 +1,30 @@
+/* FONTS */
+
+/* GEIST - Вариативный шрифт */
+@font-face {
+    font-family: 'Geist';
+    src: url('../fonts/Geist/Geist-VariableFont_wght.ttf') format('truetype'),
+         url('../fonts/Geist/Geist-VariableFont_wght.woff') format('woff');
+    /* Указываем диапазон весов, которые поддерживает вариативный шрифт */
+    font-weight: 100 900; 
+    font-style: normal;
+    font-display: swap;
+}
+
+/* INSTRUMENT SERIF - Обычный */
+@font-face {
+    font-family: 'Instrument Serif';
+    src: url('../fonts/Instrument_Serif/InstrumentSerif-Regular.ttf') format('truetype');
+    font-weight: 400; /* Стандартный вес */
+    font-style: normal;
+    font-display: swap;
+}
+
+/* INSTRUMENT SERIF - Курсив */
+@font-face {
+    font-family: 'Instrument Serif';
+    src: url('../fonts/Instrument_Serif/InstrumentSerif-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic; /* Теперь браузер поймет, когда включать этот файл */
+    font-display: swap;
+}
