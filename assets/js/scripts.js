@@ -37,6 +37,6 @@ advisoryArticles.forEach((article) => {
   });
 });
 
-const goTo = (url) => {
-  window.open(url, "_blank");
+const goTo = (url, target="_blank") => {
+  window.open(url, target);
 };

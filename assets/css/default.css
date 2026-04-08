@@ -13,8 +13,10 @@
 :root {
   --main-dark: RGB(17, 16, 15);
   --transition: 0.2s;
+  --responsive-h1-font-size: 80px;
   --responsive-font-size: 80px;
   --responsive-p-font-size: 20px;
+  --border-radius: 8px;
 }
 
 @keyframes fadeInUp {
@@ -109,8 +111,7 @@ li {
 .p-120-64 {
   padding: 120px 0;
 }
-p
-{
+p {
   font-size: var(--responsive-p-font-size);
 }
 .btn {
@@ -165,7 +166,24 @@ main {
   padding: 80px 40px 80px 40px;
   overflow: hidden;
 }
-.subscribe img {
+.subscribe .bg__img {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  max-width: 1920px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.subscribe .bg__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.subscribe .bg__letter {
   max-width: 1024px;
   min-width: 800px;
   width: 100%;
@@ -205,6 +223,7 @@ main {
 @media (max-width: 1280px) {
   :root {
     --responsive-font-size: 64px;
+    --responsive-h1-font-size: 60px;
   }
   .subscribe h2 {
     font-size: 64px;
@@ -213,6 +232,7 @@ main {
 @media (max-width: 768px) {
   :root {
     --responsive-font-size: 40px;
+    --responsive-h1-font-size: 34px;
     --responsive-p-font-size: 18px;
   }
 
@@ -225,6 +245,12 @@ main {
 
   .subscribe h2 {
     font-size: 40px;
+  }
+  .subscribe .bg__letter {
+    max-width: none;
+    min-width: 0;
+    height: 277px;
+    width: auto;
   }
 
   .subscribe .content {

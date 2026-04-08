@@ -11,7 +11,7 @@
     text-align: center;
     padding: 180px 0 80px 0;
     color: rgba(246, 248, 251, 1);
-    font-size: var(--responsive-font-size);
+    font-size: var(--responsive-h1-font-size);
     font-weight: 400;
     line-height: 80%;
     letter-spacing: -2%;
