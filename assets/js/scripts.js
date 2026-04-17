@@ -26,11 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-const advisoryArticles = document.querySelectorAll(
-  ".advisory article[data-url]",
+const linkArticles = document.querySelectorAll(
+  "article[data-url]",
 );
 
-advisoryArticles.forEach((article) => {
+linkArticles.forEach((article) => {
   article.addEventListener("click", () => {
     const url = article.getAttribute("data-url");
     window.open(url, "_self");
