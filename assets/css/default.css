@@ -240,6 +240,147 @@ main {
   background-color: var(--main-dark);
 }
 
+
+
+
+
+.contact-us
+{
+  display: flex;
+  padding: 80px 40px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+}
+.contact-us .contact-content,
+.contact-us .contact-form
+{
+  max-width: 580px;
+  min-width: 340px;
+  width: calc((100% - 40px) / 2);
+}
+.contact-us .contact-content
+{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contact-us .contact-content h2
+{
+  color: #F6F8FB;
+
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 95%;
+  letter-spacing: -1.6px;
+}
+.contact-us .contact-content p,
+.contact-us .contact-content a
+{
+  color: #F6F8FB;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+  letter-spacing: -0.4px;
+}
+
+
+.contact-us .contact-form form
+{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.contact-us .contact-form p
+{
+  position: relative;
+}
+.contact-us .contact-form p label
+{
+  left: 0;
+  position: absolute;
+  font-size: 20px;
+  top: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.contact-us .contact-form p input,
+.contact-us .contact-form p textarea
+{
+  width: 100%;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #F6F8FB;
+  color: #fff;
+}
+.contact-us .contact-form p textarea
+{
+  min-height: 400px;
+  max-height: 500px;
+  padding: 10px;
+  border: 1px solid #F6F8FB;
+  resize: none;
+}
+textarea::-webkit-scrollbar {
+  width: 3px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: #F6F8FB;
+}
+.contact-us .contact-form p textarea ~ label
+{
+  top: 10px;
+  left: 10px;
+}
+.contact-us .contact-form p .form__input:focus ~ label,
+.contact-us .contact-form p .form__input:not(:placeholder-shown).form__input:not(:focus) ~ label
+{
+  top: -20px;
+  left: 0;
+  font-size: 12px;
+  color: var(--secondary-text);
+}
+.contact-us .contact-form .btn
+{
+  display: flex;
+  justify-content: flex-end
+}
+.contact-us .contact-form button
+{
+  display: flex;
+  width: max-content;
+  height: 68px;
+  padding: 0 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  background-color: var(--secondary-text);
+
+  color: #0F0E0E;
+  font-family: "Geist";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%; /* 28px */
+  letter-spacing: -0.4px;
+  cursor: pointer;
+}
+
+
+
+
+
+
 @media (max-width: 1280px) {
   :root {
     --responsive-font-size: 64px;
@@ -301,5 +442,18 @@ main {
     /* Button - small */
     height: 56px;
     padding: 0px 16px 0px 16px;
+  }
+
+  
+  
+  .contact-us
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-us .contact-content, .contact-us .contact-form
+  {
+    width: 100%;
+    min-width: 275px;
   }
 }
