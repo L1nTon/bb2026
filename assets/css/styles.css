@@ -1,3 +1,15 @@
+@import url(fonts.css);
+@import url(default.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(carousel.css);
+@import url(about.css);
+@import url(article.css);
+@import url(bb2026.css);
+
+
+
+
 .hero {
   min-height: 800px;
   height: 100vh;
@@ -37,16 +49,16 @@
   color: var(--main-dark);
 }
 
-.about {
+.about_bb {
   width: 100%;
   flex-direction: column;
   gap: 40px;
 }
 
-.about h1 {
+.about_bb h1 {
   text-align: center;
 }
-.about p {
+.about_bb p {
   color: var(--main-dark);
   text-align: justify;
   letter-spacing: -2%;
@@ -221,10 +233,10 @@
     padding: 0px 40px 64px 40px;
   }
   .future,
-  .about {
+  .about_bb {
     padding: 64px 40px 64px 40px;
   }
-  .about h1 {
+  .about_bb h1 {
     min-width: 275px;
     width: 100%;
     text-align: left;
