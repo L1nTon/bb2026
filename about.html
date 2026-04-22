@@ -241,7 +241,7 @@
       const result = [];
       advisoryBoardList.forEach((member, index) => {
         result.push(`
-        <article class="${index % 2 === 0 ? "" : "reverse"} scroll-animate" id="${member.name.split(" ").join("-")}">
+        <article class="scroll-animate" id="${member.name.split(" ").join("-")}">
           <div class="article__img">
             <img
               src="./assets/images/about/team/${member.name.split(" ").join("-")}.png"
