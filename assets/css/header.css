@@ -77,7 +77,7 @@ header nav .header__nav a:hover {
   background: var(--main-dark);
   color: #fff;
 }
-header nav a.active {
+header nav .header__nav a.active {
   background: var(--main-dark);
   color: #fff;
 }
