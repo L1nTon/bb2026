@@ -40,3 +40,16 @@ linkArticles.forEach((article) => {
 const goTo = (url, target="_blank") => {
   window.open(url, target);
 };
+
+const langSelect = document.querySelector(".mobile-lang");
+
+langSelect.addEventListener("click", (e) => {
+  e.stopPropagation();
+  langSelect.classList.toggle("active");
+});
+
+window.addEventListener("click", () => {
+  if (langSelect.classList.contains("active")) {
+    langSelect.classList.remove("active");
+  }
+});

@@ -365,6 +365,8 @@ textarea::-webkit-scrollbar-thumb {
   align-items: center;
   border-radius: 999px;
   background-color: var(--secondary-text);
+  border: none;
+  outline: none;
 
   color: #0F0E0E;
   font-family: "Geist";
@@ -374,8 +376,12 @@ textarea::-webkit-scrollbar-thumb {
   line-height: 140%; /* 28px */
   letter-spacing: -0.4px;
   cursor: pointer;
+  transition: .3s;
 }
-
+.contact-us .contact-form button:hover {
+  background: var(--main-dark);
+  color: #fff;
+}
 
 
 

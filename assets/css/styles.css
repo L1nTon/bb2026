@@ -122,6 +122,11 @@
 .advisory-list article .article__img {
   width: 125px;
   height: 125px;
+  flex-shrink: 0;
+}
+.advisory-list article .article__img img
+{
+  width: 100%;
 }
 .advisory-view-all {
   position: relative;
@@ -132,6 +137,7 @@
   cursor: pointer;
   background-color: rgb(245, 245, 245);
   background-image: url(../images/card_bg_hover.png);
+  border-radius: 8px;
 }
 .advisory-view-all::before {
   content: "";
@@ -252,8 +258,7 @@
     justify-content: space-between;
     min-height: 82px;
   }
-  .advisory-list article .article__img,
-  .advisory-list article .article__img img {
+  .advisory-list article .article__img {
     width: 50px;
     height: 50px;
   }
