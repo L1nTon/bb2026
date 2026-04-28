@@ -19,26 +19,25 @@ header nav
 header nav .lang-list
 {
   display: flex;
-  padding: 12px;
   gap: 10px;
 }
 header nav .lang-list.mobile-lang
 {
-  padding: 12px 0;
   position: absolute;
   right: 0;
   top: 0;
-  max-height: 50px;
+  max-height: 44px;
   overflow: hidden;
   flex-direction: column;
   transition: .5s;
   cursor: pointer;
   background-color: var(--main-dark);
+  display: none;
 }
 header nav .lang-list.mobile-lang a,
 header nav .lang-list.mobile-lang span
 {
-  padding: 0 12px;
+  padding: 8px 12px;
 
 }
 header nav .lang-list.mobile-lang a:hover
@@ -50,10 +49,6 @@ header nav .lang-list.mobile-lang.active
   max-height: 1000px;
 }
 
-header nav .lang-list.mobile-lang
-{
-  display: none;
-}
 header nav .lang-list a
 {
   color: #F6F8FB;
@@ -88,7 +83,8 @@ header nav .header__nav a.active {
   }
   header nav .header__nav a
   {
-    padding: 8px 12px;
+    padding: 6px 8px;
+    font-size: 14px;
   }
   header .header__logo {
     display: none;
